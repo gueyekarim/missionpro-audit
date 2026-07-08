@@ -243,7 +243,38 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section id="fonctionnalites-avancees" className="mx-auto max-w-7xl px-6 py-16 lg:px-12">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Fonctionnalités avancées
+          </p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
+            Fonctionnalités et cas d’usage avancés
+          </h2>
+          <p className="mt-6 text-base leading-8 text-slate-600">
+            Au-delà de la cartographie des risques et du cadrage des missions,
+            MissionPro Audit peut assister les fonctions d’audit, d’inspection et
+            de gouvernance sur des travaux plus avancés de conseil, de reporting,
+            de structuration méthodologique et d’automatisation.
+          </p>
+        </div>
 
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {advancedFeatures.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-slate-950">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
       <section id="capacites" className="mx-auto max-w-7xl px-6 py-16 lg:px-12">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
