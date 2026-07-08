@@ -25,7 +25,40 @@ export default function Home() {
       text: "Accélérez le cadrage, la structuration, la documentation, la consolidation et le reporting pour laisser plus de place au jugement professionnel.",
     },
   ];
-
+  const advancedFeatures = [
+    {
+      title: "Fonction conseil",
+      text: "Structurez des notes de conseil, des options de transformation, des lectures de gouvernance et des recommandations d’amélioration sans vous substituer à la décision du management.",
+    },
+    {
+      title: "Rapports périodiques",
+      text: "Préparez des synthèses trimestrielles, semestrielles ou annuelles pour la direction, le comité d’audit ou le conseil, avec suivi des risques, recommandations ouvertes et priorités d’attention.",
+    },
+    {
+      title: "Audit des risques de fraude",
+      text: "Analysez les scénarios de fraude, les red flags, les vulnérabilités de contrôle, les facteurs de risque et les priorités de maîtrise dans une logique d’audit rigoureuse et défendable.",
+    },
+    {
+      title: "Outils et matrices d’audit",
+      text: "Générez des matrices objectifs-risques-contrôles, matrices de traçabilité, programmes de travail, tableaux de suivi et supports méthodologiques pour accélérer les missions.",
+    },
+    {
+      title: "Suivi des recommandations",
+      text: "Structurez le suivi des recommandations critiques, identifiez les retards, les actions à vérifier et les tendances récurrentes pour renforcer la redevabilité et la gouvernance.",
+    },
+    {
+      title: "Automatisation des tâches d’audit",
+      text: "Réduisez la charge de cadrage, structuration, documentation, consolidation et reporting afin de laisser plus de place au jugement professionnel et à l’investigation.",
+    },
+    {
+      title: "Synthèses board-level",
+      text: "Transformez les constats, risques et déficits de capacités en messages clairs, hiérarchisés et utiles pour les instances de gouvernance.",
+    },
+    {
+      title: "Préparation au déploiement technique",
+      text: "Analysez un dépôt GitHub, sa configuration et ses workflows CI/CD pour préparer un déploiement plus sûr, avec checklist, go/no-go et étapes manuelles si nécessaire.",
+    },
+  ];
   const capabilityItems = [
     "Gouvernance",
     "Pilotage",
