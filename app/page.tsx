@@ -1,4 +1,63 @@
 export default function Home() {
+  const useCases = [
+    {
+      title: "Cartographier les risques",
+      text: "Identifiez les risques majeurs, émergents ou systémiques, reliez-les aux objectifs et hiérarchisez les expositions critiques pour la gouvernance.",
+    },
+    {
+      title: "Cadrer une mission d’audit",
+      text: "Préparez le périmètre, les questions d’audit, les critères d’appréciation, les tests prioritaires et les capacités à examiner.",
+    },
+    {
+      title: "Analyser causes et capacités",
+      text: "Reliez les constats, incidents ou contre-performances à leurs causes racines et aux déficits de capacités qui entretiennent durablement les risques.",
+    },
+    {
+      title: "Auditer les risques de fraude",
+      text: "Structurez les scénarios de fraude, les red flags, les facteurs de risque, les contrôles anti-fraude, les tests d’audit et les priorités de maîtrise.",
+    },
+    {
+      title: "Produire des synthèses board-level",
+      text: "Transformez les constats d’audit en messages clairs pour la direction générale, le comité d’audit ou le conseil.",
+    },
+    {
+      title: "Automatiser la routine d’audit",
+      text: "Accélérez le cadrage, la structuration, la documentation, la consolidation et le reporting pour laisser plus de place au jugement professionnel.",
+    },
+  ];
+
+  const capabilityItems = [
+    "Gouvernance",
+    "Pilotage",
+    "Exécution",
+    "Contrôle interne",
+    "Données et information",
+    "Apprentissage et adaptation",
+  ];
+
+  const valueItems = [
+    {
+      title: "Cartographier",
+      text: "Identifier les risques majeurs et structurer une lecture claire des expositions critiques.",
+    },
+    {
+      title: "Expliquer",
+      text: "Relier les risques à leurs causes profondes, aux faiblesses de contrôle et aux déficits de capacités.",
+    },
+    {
+      title: "Transformer",
+      text: "Produire des recommandations hiérarchisées, actionnables et orientées gouvernance, résilience et performance.",
+    },
+  ];
+
+  const differentiators = [
+    "Audit fondé sur les risques enrichi par une lecture des capacités.",
+    "Approche adaptée au niveau board et comité d’audit.",
+    "Traitement conjoint de la fraude, de la gouvernance, de la transformation et de la performance.",
+    "Accélération des travaux d’audit à faible valeur ajoutée.",
+    "Livrables plus rapides, plus structurés et plus crédibles.",
+  ];
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
@@ -15,6 +74,9 @@ export default function Home() {
           <nav className="hidden gap-8 text-sm font-medium text-slate-600 md:flex">
             <a href="#apropos" className="hover:text-slate-950">
               À propos
+            </a>
+            <a href="#cas-usage" className="hover:text-slate-950">
+              Cas d’usage
             </a>
             <a href="#capacites" className="hover:text-slate-950">
               Capacités
@@ -40,17 +102,26 @@ export default function Home() {
         <div className="grid gap-14 lg:grid-cols-2 lg:items-center">
           <div>
             <div className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700">
-              Plateforme intelligente d’audit fondé sur les risques
+              Plateforme intelligente d’audit interne fondé sur les risques
             </div>
 
             <h1 className="mt-6 text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              L’IA board-level de l’audit interne, des risques et des capacités
+              L’IA board-level de l’audit interne, des risques, de la fraude et
+              des capacités
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              MissionPro aide les dirigeants, auditeurs, inspections et comités
-              d’audit à relier les objectifs, les risques, les causes, les
-              capacités critiques et les actions de transformation.
+              MissionPro Audit aide les dirigeants, auditeurs, inspections et
+              comités d’audit à relier les objectifs, les risques, les causes,
+              les capacités critiques, les contrôles et les priorités de
+              transformation.
+            </p>
+
+            <p className="mt-4 max-w-2xl text-base leading-8 text-slate-600">
+              La plateforme permet de cartographier les risques, cadrer les
+              missions, analyser les vulnérabilités, auditer les risques de
+              fraude, produire des synthèses board-level et automatiser une
+              large part des travaux d’audit les plus répétitifs.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -61,10 +132,10 @@ export default function Home() {
                 Demander une démonstration
               </a>
               <a
-                href="#valeur"
+                href="#cas-usage"
                 className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
               >
-                Découvrir la plateforme
+                Découvrir les cas d’usage
               </a>
             </div>
           </div>
@@ -81,7 +152,7 @@ export default function Home() {
                 Capacités → Contrôles → Transformation
               </div>
               <div className="rounded-2xl bg-white p-4 shadow-sm">
-                Performance → Résilience → Valeur
+                Gouvernance → Résilience → Valeur
               </div>
             </div>
           </div>
@@ -95,15 +166,48 @@ export default function Home() {
               À propos
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
-              Une approche plus stratégique que le simple contrôle
+              Une approche d’audit plus stratégique que le simple contrôle
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-600">
-              MissionPro dépasse la lecture classique des risques en aidant à
-              comprendre pourquoi ils persistent, quelles capacités sont
-              insuffisantes et quelles transformations peuvent créer une maîtrise
-              plus durable et une meilleure performance.
+              MissionPro Audit dépasse la lecture classique des risques en
+              aidant à comprendre pourquoi ils persistent, quelles capacités
+              organisationnelles sont insuffisantes et quelles transformations
+              peuvent renforcer durablement la maîtrise, la performance et la
+              création de valeur.
+            </p>
+            <p className="mt-4 text-base leading-8 text-slate-600">
+              Cette approche permet de passer d’un audit descriptif à un audit
+              explicatif, orienté causes profondes, vulnérabilités
+              structurelles et priorités d’action.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section id="cas-usage" className="mx-auto max-w-7xl px-6 py-16 lg:px-12">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Cas d’usage
+          </p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
+            Ce que MissionPro Audit permet de faire concrètement
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {useCases.map((item) => (
+            <div
+              key={item.title}
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-slate-950">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -115,17 +219,15 @@ export default function Home() {
           <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
             Une lecture structurée de la maturité organisationnelle
           </h2>
+          <p className="mt-6 text-base leading-8 text-slate-600">
+            MissionPro Audit analyse les risques non seulement par les
+            contrôles, mais aussi par les capacités qui rendent une organisation
+            robuste, cohérente et durablement maîtrisée.
+          </p>
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {[
-            "Gouvernance",
-            "Pilotage",
-            "Exécution",
-            "Contrôle interne",
-            "Données et information",
-            "Apprentissage et adaptation",
-          ].map((item) => (
+          {capabilityItems.map((item) => (
             <div
               key={item}
               className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
@@ -150,33 +252,48 @@ export default function Home() {
               Moins de routine, plus d’architecture d’audit
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-300">
-              MissionPro automatise une large part des tâches de cadrage,
+              MissionPro Audit automatise une large part des tâches de cadrage,
               structuration, consolidation et reporting afin de permettre aux
-              auditeurs de se concentrer sur le jugement professionnel, l’analyse
-              des causes racines et la création de valeur.
+              auditeurs de se concentrer sur l’analyse, l’investigation, le
+              jugement professionnel et la création de valeur.
             </p>
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-white">
-              <h3 className="text-lg font-semibold">Cartographier</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-300">
-                Identifier les risques majeurs, émergents et systémiques.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-white">
-              <h3 className="text-lg font-semibold">Expliquer</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-300">
-                Relier les risques à leurs causes profondes et aux déficits de capacités.
-              </p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-6 text-white">
-              <h3 className="text-lg font-semibold">Transformer</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-300">
-                Produire des recommandations hiérarchisées et actionnables.
-              </p>
-            </div>
+            {valueItems.map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-white"
+              >
+                <h3 className="text-lg font-semibold">{item.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-300">
+                  {item.text}
+                </p>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-12">
+        <div className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+            Différenciation
+          </p>
+          <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
+            Pourquoi MissionPro Audit se distingue
+          </h2>
+        </div>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {differentiators.map((item) => (
+            <div
+              key={item}
+              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm text-sm leading-7 text-slate-700"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -187,13 +304,15 @@ export default function Home() {
               Contact
             </p>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950">
-              Échangeons sur votre dispositif d’audit et de gestion des risques
+              Échangeons sur votre dispositif d’audit, de risque et de
+              transformation
             </h2>
             <p className="mt-6 text-base leading-8 text-slate-600">
               Que vous prépariez un plan d’audit, une cartographie des risques,
-              une mission spécifique ou une réflexion de transformation,
-              MissionPro peut vous aider à structurer une lecture plus claire,
-              plus rigoureuse et plus stratégique.
+              une mission ciblée, un audit de fraude, une synthèse au comité
+              d’audit ou une réflexion de transformation, MissionPro Audit peut
+              vous aider à structurer une lecture plus claire, plus rigoureuse
+              et plus stratégique.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -204,32 +323,15 @@ export default function Home() {
                 Contacter MissionPro
               </a>
               <a
-                href="#"
-                className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-white"
+                href="#top"
+                className="inline-flex items-center justify-center rounded-xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-100"
               >
-                Télécharger la présentation
+                Revenir en haut
               </a>
             </div>
           </div>
         </div>
       </section>
-
-      <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between lg:px-12">
-          <p>© 2026 MissionPro Audit. Tous droits réservés.</p>
-          <div className="flex gap-6">
-            <a href="#apropos" className="hover:text-slate-900">
-              À propos
-            </a>
-            <a href="#capacites" className="hover:text-slate-900">
-              Capacités
-            </a>
-            <a href="#contact" className="hover:text-slate-900">
-              Contact
-            </a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
